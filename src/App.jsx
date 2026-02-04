@@ -17,13 +17,20 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
  */
 
 const CONFIG = {
-  brand: {
+   brand: {
     name: "LinkMoney",
     tagline: "Fix credit first. Build trust for life.",
-    subtagline: "India’s agent-led credit builder and fixer platform for DSAs.",
-    primaryCta: { label: "Partner as DSA", href: "#contact" },
-    secondaryCta: { label: "Talk to Us", href: "#contact" },
+    subtagline: "India’s agent-led credit OS",
+    primaryCta: { label: "Connect with Founder", href: "mailto:saurav.roy@linkmoney.in?subject=LinkMoney%20-%20Pre-seed%20Intro" },
+    secondaryCta: { label: "Email Saurav", href: "mailto:saurav.roy@linkmoney.in?subject=LinkMoney%20-%20Partner%20%2F%20Pilot" },
   },
+
+  raise: {
+    headline: "Raising $700K pre-seed",
+    subline: "Seeking investor partners for the Agent-led Credit OS",
+    email: "saurav.roy@linkmoney.in",
+  },
+
 
   stats: [
     {
@@ -175,26 +182,26 @@ const CONFIG = {
     title: "About Us",
     subtitle: "Built by those who’ve seen the problem firsthand",
     people: [
-      { name: "Saurav Roy", oneLiner: "ex-Tech Lead at AWS, Open Source contributor at OpenSearch, VIT Vellore ", img: "dhiraj.jpeg" },
-      { name: "Dhiraj Kumar Jain", oneLiner: "ex-Tech Lead Razorpay, Acko | Ex- CTO Fridayy.ai, VIT Vellore", img: "saurav.png" },
+      { name: "Saurav Roy (CEO)", oneLiner: "ex-Tech Lead Razorpay, Acko | Ex- CTO Fridayy.ai, VIT Vellore", img: "saurav.png" },
+      { name: "Dhiraj Kumar Jain (CTO)", oneLiner: "ex-Tech Lead at AWS, Open Source contributor at OpenSearch, VIT Vellore ", img: "dhiraj.jpeg" },
     ],
     story:
       "We saw DSAs losing customers due to blind selling and repeated rejections. We built LinkMoney to give agents the intelligence and systems to guide customers, fix credit, and build lifelong trust.",
   },
 
-  closing: {
+   closing: {
     headline: "Rebuilding India’s credit outcomes\nthrough trusted agents.",
-    primaryCta: { label: "Join the Pilot", href: "#contact" },
-    secondaryCta: { label: "Partner With Us", href: "#contact" },
+    primaryCta: { label: "Investor Intro (Email)", href: "mailto:saurav.roy@linkmoney.in?subject=LinkMoney%20-%20$700K%20Pre-seed%20Intro" },
+    secondaryCta: { label: "Partner / Pilot (Email)", href: "mailto:saurav.roy@linkmoney.in?subject=LinkMoney%20-%20Partner%20%2F%20Pilot" },
   },
 
-  footer: {
+   footer: {
     copyright: "© 2026 LinkMoney. All rights reserved.",
     links: [
       { label: "About", href: "#about" },
       { label: "Privacy", href: "#privacy" },
       { label: "Terms", href: "#terms" },
-      { label: "Contact", href: "#contact" },
+      { label: "Contact", href: "mailto:saurav.roy@linkmoney.in?subject=LinkMoney%20-%20Contact" },
     ],
   },
 };
@@ -947,8 +954,20 @@ export default function App() {
         <div className="lm-container">
           <div className="lm-heroInner">
             <div className="lm-heroCopy">
-              <div className="lm-kicker lm-kicker--hero">Agent-led Credit OS</div>
-              <h1 className="lm-h1">{CONFIG.brand.tagline}</h1>
+            <div className="lm-kicker lm-kicker--hero">Agent-led Credit OS</div>
+            <div className="lm-raise">
+              <div className="lm-raiseTop">{CONFIG.raise.headline}</div>
+              <div className="lm-raiseSub">{CONFIG.raise.subline}</div>
+              <a
+                className="lm-raiseEmail"
+                href={`mailto:${CONFIG.raise.email}?subject=LinkMoney%20-%20$700K%20Pre-seed%20Intro`}
+              >
+                {CONFIG.raise.email}
+              </a>
+            </div>
+
+          <h1 className="lm-h1">{CONFIG.brand.tagline}</h1>
+
               <p className="lm-heroSub">{CONFIG.brand.subtagline}</p>
               <div className="lm-heroCtas">
                 <Button href={CONFIG.brand.primaryCta.href} variant="primary">
@@ -2201,4 +2220,41 @@ a{ color:inherit; }
   .lm-btn{ width:100%; }
   .lm-grid--5{ grid-template-columns: 1fr; }
 }
+
+.lm-raise{
+  margin: 14px 0 18px;
+  padding: 14px 14px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.18);
+  backdrop-filter: blur(12px);
+  max-width: 560px;
+}
+.lm-raiseTop{
+  font-weight: 950;
+  letter-spacing: -0.02em;
+  font-size: 1.05rem;
+}
+.lm-raiseSub{
+  margin-top: 6px;
+  color: rgba(255,255,255,0.84);
+  font-weight: 750;
+  font-size: .95rem;
+}
+.lm-raiseEmail{
+  display:inline-flex;
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  background: rgba(16,185,129,0.14);
+  border: 1px solid rgba(16,185,129,0.28);
+  color: rgba(255,255,255,0.92);
+  text-decoration:none;
+  font-weight: 900;
+}
+.lm-raiseEmail:hover{
+  box-shadow: 0 16px 40px rgba(16,185,129,0.12);
+  transform: translateY(-1px);
+}
+
 `;
