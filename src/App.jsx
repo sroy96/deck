@@ -21,13 +21,13 @@ const CONFIG = {
     name: "LinkMoney",
     tagline: "Fix credit first. Build trust for life.",
     subtagline: "India’s agent-led credit OS",
-    primaryCta: { label: "Schedule a Call ", href: "mailto:https://calendly.com/saurav_12k/30min?subject=LinkMoney%20-%20Pre-seed%20Intro" },
-    secondaryCta: { label: "Email Founder", href: "mailto:saurav.roy@linkmoney.in?subject=LinkMoney%20-%20Partner%20%2F%20Pilot" },
+    primaryCta: { label: "Schedule a Call ", href: "https://calendly.com/saurav_12k/30min" },
+    secondaryCta: { label: "Email Founder", href: "mailto:saurav.roy@linkmoney.in" },
   },
 
   raise: {
     headline: "Raising $700K pre-seed", 
-    subline: "Seeking investor partners for the Agent-led Credit OS",
+    subline: "Seeking investors to build largest Agent-led Credit OS",
     email: "saurav.roy@linkmoney.in",
   },
 
@@ -191,11 +191,17 @@ const CONFIG = {
       "We saw DSAs losing customers due to blind selling and repeated rejections. We built LinkMoney to give agents the intelligence and systems to guide customers, fix credit, and build lifelong trust.",
   },
 
-   closing: {
-    headline: "Rebuilding India’s credit outcomes\nthrough trusted agents.",
-    primaryCta: { label: "Investor Intro (Email)", href: "mailto:saurav.roy@linkmoney.in?subject=LinkMoney%20-%20$700K%20Pre-seed%20Intro" },
-    secondaryCta: { label: "Partner / Pilot (Email)", href: "mailto:saurav.roy@linkmoney.in?subject=LinkMoney%20-%20Partner%20%2F%20Pilot" },
+ closing: {
+  headline: "Rebuilding India’s credit outcomes\nthrough trusted agents.",
+  primaryCta: {
+    label: "Schedule a Call",
+    href: "https://calendly.com/saurav_12k/30min",
   },
+  secondaryCta: {
+    label: "Chat on WhatsApp",
+    href: "https://wa.me/919585386951",
+  },
+},
 
    footer: {
     copyright: "© 2026 LinkMoney. All rights reserved.",
