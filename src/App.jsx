@@ -21,12 +21,12 @@ const CONFIG = {
     name: "LinkMoney",
     tagline: "Fix credit first. Build trust for life.",
     subtagline: "India’s agent-led credit OS",
-    primaryCta: { label: "Connect with Founder", href: "mailto:saurav.roy@linkmoney.in?subject=LinkMoney%20-%20Pre-seed%20Intro" },
-    secondaryCta: { label: "Email Saurav", href: "mailto:saurav.roy@linkmoney.in?subject=LinkMoney%20-%20Partner%20%2F%20Pilot" },
+    primaryCta: { label: "Schedule a Call ", href: "mailto:https://calendly.com/saurav_12k/30min?subject=LinkMoney%20-%20Pre-seed%20Intro" },
+    secondaryCta: { label: "Email Founder", href: "mailto:saurav.roy@linkmoney.in?subject=LinkMoney%20-%20Partner%20%2F%20Pilot" },
   },
 
   raise: {
-    headline: "Raising $700K pre-seed",
+    headline: "Raising $700K pre-seed", 
     subline: "Seeking investor partners for the Agent-led Credit OS",
     email: "saurav.roy@linkmoney.in",
   },
@@ -184,6 +184,8 @@ const CONFIG = {
     people: [
       { name: "Saurav Roy (CEO)", oneLiner: "ex-Tech Lead Razorpay, Acko | Ex- CTO Fridayy.ai, VIT Vellore", img: "saurav.png" },
       { name: "Dhiraj Kumar Jain (CTO)", oneLiner: "ex-Tech Lead at AWS, Open Source contributor at OpenSearch, VIT Vellore ", img: "dhiraj.jpeg" },
+      { name: "Anish Kumar Saha (Founding Member)", oneLiner: "ex-Founding Engineer at Supaki, Karza, VIT Vellore ", img: "anish.jpeg" },
+
     ],
     story:
       "We saw DSAs losing customers due to blind selling and repeated rejections. We built LinkMoney to give agents the intelligence and systems to guide customers, fix credit, and build lifelong trust.",
@@ -1850,7 +1852,7 @@ a{ color:inherit; }
 /* FOUNDERS */
 .lm-foundersGrid{
   display:grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 34px;
   max-width: 980px;
   margin: 0 auto 34px;
@@ -2196,6 +2198,7 @@ a{ color:inherit; }
   .lm-grid--5{ grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 @media (max-width: 980px){
+  .lm-foundersGrid{ grid-template-columns: 1fr; }
   .lm-heroInner{ grid-template-columns: 1fr; }
   .lm-heroCard{ display:none; }
   .lm-simGrid{ grid-template-columns: 1fr; }
