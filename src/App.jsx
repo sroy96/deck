@@ -22,7 +22,10 @@ const CONFIG = {
     tagline: "Fix credit first. Build trust for life.",
     subtagline: "India’s agent-led credit OS",
     primaryCta: { label: "Schedule a Call ", href: "https://calendly.com/saurav_12k/30min" },
-    secondaryCta: { label: "Email Founder", href: "mailto:saurav.roy@linkmoney.in" },
+    secondaryCta: {
+    label: "Chat on WhatsApp",
+    href: "https://wa.me/919585386951",
+  },
   },
 
   raise: {
